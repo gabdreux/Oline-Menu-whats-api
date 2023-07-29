@@ -21,10 +21,12 @@
             
         </div>
 
+
         <a class="botao-carrinho hidden" onclick="cardapio.metodos.abrirCarrinho(true)">
             <div class="badge-total-carrinho">0</div>
             <i class="fa fa-shopping-bag"></i>            
         </a>
+        
 
         <section class="header">
             <div class="container">
@@ -87,7 +89,7 @@
                             </p>
                             <div>
                                 <a class="btn btn-yellow mt-4 mr-3">Ver cardápio</a>
-                                <a href="#" class="btn btn-white btn-icon-left mt-4">
+                                <a href="#" class="btn btn-white btn-icon-left mt-4" id="btnLigar">
                                     <span class="icon-left">
                                         <i class="fa fa-phone"></i>
                                     </span>
@@ -96,13 +98,13 @@
                             </div>
                         </div>
 
-                        <a class="btn btn-sm btn-white btn-social mt-4 mr-3">
+                        <a href="#" class="btn btn-sm btn-white btn-social mt-4 mr-3" target="_blank">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a class="btn btn-sm btn-white btn-social mt-4 mr-3">
+                        <a href="#" class="btn btn-sm btn-white btn-social mt-4 mr-3" target="_blank">
                             <i class="fab fa-facebook"></i>
                         </a>
-                        <a class="btn btn-sm btn-white btn-social mt-4 mr-3">
+                        <a href="#" class="btn btn-sm btn-white btn-social mt-4 mr-3" target="_blank">
                             <i class="fab fa-whatsapp"></i>
                         </a>
 
@@ -115,7 +117,7 @@
                             <img src="./img/burguer.png">
                         </div>
                         <div class="card card-case">
-                            " Entra rápida e funcionários simpáticos!<br>
+                            " Entrega rápida e funcionários simpáticos!<br>
                             A comida chegou quente e <br>muito saborosa!"
                             <span class="card-case-name">
                                 <b>Gabriel Dreux</b>
@@ -127,9 +129,6 @@
                 </div>
             </div>
         </section>
-
-
-
 
 
 
@@ -335,8 +334,8 @@
 
                         </div>
 
-                        <a class="btn btn-sm btn-white btn-social active mr-3">1</a>
-                        <a class="btn btn-sm btn-white btn-social">2</a>
+                        <a id="btnDepoimento-1" class="btn btn-sm btn-white btn-social active mr-3" onclick="cardapio.metodos.abrirDepoimento(1)">1</a>
+                        <a id="btnDepoimento-2" class="btn btn-sm btn-white btn-social" onclick="cardapio.metodos.abrirDepoimento(2)">2</a>
 
                     </div>
                 </div>
@@ -363,7 +362,7 @@
                                         <br>
                                         Reserve sua data e horário de forma simples e rápida.
                                     </p>
-                                    <a class="btn btn-yellow mt-4">
+                                    <a class="btn btn-yellow mt-4" href="#" id="btnReserva" target="_blank">
                                         Fazer reserva
                                     </a>
                                 </div>
@@ -404,13 +403,13 @@
 
 
                     <div class="col-3 container-redes-footer">
-                        <a class="btn btn-sm btn-white btn-social mr-3">
+                        <a href="#" class="btn btn-sm btn-white btn-social mr-3" target="_blank">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a class="btn btn-sm btn-white btn-social mr-3">
+                        <a href="#" class="btn btn-sm btn-white btn-social mr-3" target="_blank">
                             <i class="fab fa-facebook"></i>
                         </a>
-                        <a class="btn btn-sm btn-white btn-social mr-3">
+                        <a href="#" class="btn btn-sm btn-white btn-social mr-3" target="_blank">
                             <i class="fab fa-whatsapp"></i>
                         </a>         
                     </div>    
@@ -617,7 +616,7 @@
                     <a class="btn btn-yellow float-right hidden" id="btnEtapaEndereco" onclick="cardapio.metodos.resumoPedido()">
                         Revisar pedido
                     </a>
-                    <a class="btn btn-yellow float-right hidden" id="btnEtapaResumo">
+                    <a href="#" class="btn btn-yellow float-right hidden" id="btnEtapaResumo" target="_blank">
                         Enviar pedido
                     </a>  
                     <a class="btn btn-white float-right mr-3 hidden" id="btnVoltar" onclick="cardapio.metodos.voltarEtapa()">
